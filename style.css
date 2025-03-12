@@ -10,3 +10,22 @@ header {
 section h2 {
     font-weight: bold;
 }
+
+#tools img {
+    transition: transform 0.3s ease;
+}
+
+#tools img:hover {
+    transform: scale(1.2);
+}
+
+#tools h5 {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #007bff;
+}
+
+#tools p {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
