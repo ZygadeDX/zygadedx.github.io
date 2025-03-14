@@ -8,3 +8,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 500);
     });
 });
+
+window.addEventListener("scroll", () => {
+    const elements = document.querySelectorAll("scroll-animate");
+    elements.forEach((element) => {
+        const position = element.getBoundingClientRect();
+        if (position.top < window.innerHeight && position.bottom >= 0) {
+            element.style.opacity = 1;
+            element.style.transform = "translateY(0)";
+        } else {
+            element.style.opacity = 0;
+            element.style.transform = "translateY(20px)";
+        }
+    });
+});
