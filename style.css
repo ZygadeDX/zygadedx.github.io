@@ -33,5 +33,29 @@
 }
 
 body {
-    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #7886C7;
+    color: #2D336B;
 }
+
+header .hero {
+    display: flex;
+    background-color: #7886C7;
+    color: white;
+    padding: 20px;
+    align-items: center;
+}
+
+header .hero img {
+    max-width: 200px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+header .hero .intro-text {
+    max-width: 600px;
+}
+
+header 
