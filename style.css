@@ -72,6 +72,20 @@ main #keahlian .skills, main #projects .project-grid {
     gap: 20px;
 }
 
+.biodata-content, .skills, .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    align-items: center;
+}
+
+.biodata-content img, .skill-box img, .project-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 .skill-box, .project-box {
     background-color: #2D336B;
     color: white;
