@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const elements = document.querySelectorAll('.fade-in');
+    const elements = document.querySelectorAll(".fade-in");
     elements.forEach((element) => {
         element.style.opacity = 0;
         element.style.transition = "opacity 2s";
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.addEventListener("scroll", () => {
-    const elements = document.querySelectorAll("scroll-animate");
+    const elements = document.querySelectorAll(".scroll-animate");
     elements.forEach((element) => {
         const position = element.getBoundingClientRect();
         if (position.top < window.innerHeight && position.bottom >= 0) {
