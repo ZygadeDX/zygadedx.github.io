@@ -87,4 +87,36 @@ skill-box:hover, .project-box:hover {
 
 footer {
     text-align: center;
+    padding: 20px;
+    background-color: #2D336B;
+    color: white;
+}
+
+footer .socials {
+    margin-top: 10px;
+}
+
+footer .socials a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out, color 0.3s;
+    text-decoration: none;
+}
+
+footer .socials a:hover {
+    transform: scale(1.2);
+    color: #4F959D;
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in;
+}
+
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
