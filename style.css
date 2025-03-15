@@ -129,7 +129,35 @@ main #keahlian .skills, main #projects .project-grid {
     height: 120px;
 }
 
+.contact-form button {
+    padding: 12px 20px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #2D336B;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
 
+.contact-form input, .contact-form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button:hover {
+    background-color: #205781;
+    transform: scale(1.05);
+}
+
+.contact-form button:active {
+    transform: scale(1);
+}
 
 footer {
     text-align: center;
