@@ -1,9 +1,10 @@
+/* Gaya Navbar */
 .navbar {
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: #2D336B;
-    padding: 15px 30px;
+    padding: 15px 30px; /* Perbesar padding */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -17,26 +18,28 @@
 }
 
 .navbar ul li {
-    margin: 0 20px;
+    margin: 0 20px; /* Jarak antar item navbar */
 }
 
 .navbar ul li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 18px; /* Perbesar ukuran font */
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
 .navbar ul li a:hover {
-    color: #4F959D;
+    color: #4F959D; /* Warna hover */
 }
 
+
+/* Gaya CSS */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #7886C7;
+    background-color: #7886C7; /* Warna latar belakang */
     color: #2D336B;
 }
 
@@ -99,34 +102,35 @@ main #keahlian .skills, main #projects .project-grid {
     transform: scale(1.1);
 }
 
+/* Gaya untuk form di Contact */
 .contact-form {
     max-width: 500px;
     margin: 0 auto;
-    display: flex;
+    display: flex;  
     flex-direction: column;
-    gap: 15px;
+    gap: 15px; /* Jarak antar elemen */
 }
 
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 12px 20px;
     border: 2px solid #2D336B;
-    border-radius: 5px;
+    border-radius: 5px; /* Membuat sudut melengkung */
     font-size: 16px;
     font-family: Arial, sans-serif;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
     transition: all 0.3s ease-in-out;
 }
 
 .contact-form input:focus, .contact-form textarea:focus {
-    border-color: #205781;
+    border-color: #205781; /* Ubah warna garis saat fokus */
     outline: none;
-    box-shadow: 0 4px 8px rgba(32, 87, 129, 0.3);
+    box-shadow: 0 4px 8px rgba(32, 87, 129, 0.3); /* Tambahkan bayangan saat fokus */
 }
 
 .contact-form textarea {
-    resize: none;
-    height: 120px;
+    resize: none; /* Nonaktifkan pengubahan ukuran kotak pesan */
+    height: 120px; /* Tinggi kotak pesan */
 }
 
 .contact-form button {
@@ -145,22 +149,22 @@ main #keahlian .skills, main #projects .project-grid {
 }
 
 .contact-form input, .contact-form textarea {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
+    display: block; /* Sama dengan tombol untuk konsistensi */
+    width: 100%; /* Pastikan lebar 100% untuk elemen input dan textarea */
+    box-sizing: border-box; /* Sertakan padding dan border */
 }
 
 .contact-form button:hover {
-    background-color: #205781;
-    transform: scale(1.05);
+    background-color: #205781; /* Ubah warna saat hover */
+    transform: scale(1.05); /* Sedikit membesar saat hover */
 }
 
 .contact-form button:active {
-    transform: scale(1);
+    transform: scale(1); /* Kembali ke ukuran semula saat diklik */
 }
 
 footer {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Kembali ke font default atau sesuai keinginan */
     font-size: 14px;
     text-align: center;
     padding: 20px;
@@ -170,7 +174,7 @@ footer {
 
 footer p {
     margin: 5px 0;
-    font-weight: normal;
+    font-weight: normal; /* Pastikan teks footer tidak tebal */
 }
 
 footer .socials {
@@ -184,17 +188,18 @@ footer .socials a {
 }
 
 footer .socials img {
-    width: 32px;
+    width: 32px; /* Ukuran ikon */
     height: 32px;
-    filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1); /* Ubah ikon menjadi putih untuk tampilan gelap */
     transition: filter 0.3s ease-in-out;
 }
 
 footer .socials a:hover img {
-    transform: scale(1.2);
-    filter: brightness(1) invert(0);
+    transform: scale(1.2); /* Efek membesar saat hover */
+    filter: brightness(1) invert(0); /* Ubah ikon menjadi berwarna saat hover */
 }
 
+/* Animasi Fade-in dan Scroll */
 .fade-in {
     opacity: 0;
     transition: opacity 2s ease-in;
@@ -206,13 +211,15 @@ footer .socials a:hover img {
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
+/* Gaya untuk teks global (selain footer) */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Font khusus untuk seluruh website */
     margin: 0;
     padding: 0;
     color: #2D336B;
 }
 
+/* Judul section */
 h2 {
     font-family: 'Poppins', sans-serif;
     font-size: 28px;
@@ -233,3 +240,4 @@ h2::after {
     background-color: #2D336B;
     margin: 10px auto 0 auto;
 }
+
