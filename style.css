@@ -74,7 +74,7 @@ main #keahlian .skills, main #projects .project-grid {
 
 .biodata-content, .skills, .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     align-items: center;
 }
