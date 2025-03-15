@@ -58,4 +58,33 @@ header .hero .intro-text {
     max-width: 600px;
 }
 
-header 
+header .intro-text {
+    color: #2D336B;
+}
+
+main section {
+    padding: 20px;
+}
+
+main #keahlian .skills, main #projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill-box, .project-box {
+    background-color: #2D336B;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+skill-box:hover, .project-box:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+}
