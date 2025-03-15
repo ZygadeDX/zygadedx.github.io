@@ -160,10 +160,17 @@ main #keahlian .skills, main #projects .project-grid {
 }
 
 footer {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
     text-align: center;
     padding: 20px;
     background-color: #2D336B;
     color: white;
+}
+
+footer p {
+    margin: 5px 0;
+    font-weight: normal;
 }
 
 footer .socials {
@@ -173,10 +180,7 @@ footer .socials {
 footer .socials a {
     display: inline-block;
     margin: 0 10px;
-    color: white;
-    font-size: 20px;
     transition: transform 0.3s ease-in-out, color 0.3s;
-    text-decoration: none;
 }
 
 footer .socials a:hover {
