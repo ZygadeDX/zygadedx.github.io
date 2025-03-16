@@ -254,3 +254,369 @@ h2::after {
     margin: 10px auto 0 auto;
 }
 
+.footer-container {
+    display: flex;
+    justify-content: space-between; /* Pisahkan konten ke kiri dan kanan */
+    align-items: center; /* Rata tengah secara vertikal */
+    padding: 20px;
+    background-color: #2D336B;
+    color: white;
+}
+
+/* Gaya untuk ikon media sosial */
+.socials {
+    display: flex;
+    gap: 15px; /* Jarak antar ikon */
+}
+
+.socials a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.socials img {
+    width: 32px; /* Ukuran ikon */
+    height: 32px;
+    filter: brightness(0) invert(1); /* Ikon berwarna putih */
+    transition: filter 0.3s ease-in-out;
+}
+
+.socials a:hover img {
+    transform: scale(1.2); /* Animasi membesar saat hover */
+    filter: brightness(1) invert(0); /* Ikon berwarna saat hover */
+}
+
+.contact-info {
+    text-align: right; /* Teks rata kanan */
+}
+
+.contact-info p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: white;
+}
+
+/* Hak cipta di footer */
+footer p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Tata letak vertikal */
+        text-align: center;
+    }
+
+    .contact-info {
+        text-align: center;
+        margin-top: 20px; /* Jarak tambahan di layar kecil */
+    }
+}
+
+.biodata-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Pastikan teks dan foto terpisah */
+    padding: 30px;
+}
+
+/* Teks di Biodata */
+.biodata-text {
+    max-width: 50%; /* Teks mengambil setengah lebar kontainer */
+    font-size: 18px; /* Ukuran teks yang lebih besar */
+    line-height: 1.6; /* Jarak antar baris teks */
+    text-align: left;
+    color: #2D336B;
+}
+
+/* Gambar di Biodata */
+.biodata-image img {
+    max-width: 250px; /* Ukuran gambar seperti di header */
+    border-radius: 50%; /* Membuat gambar berbentuk bulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan lembut */
+    transition: transform 0.3s ease-in-out; /* Animasi hover */
+}
+
+/* Animasi hover pada gambar */
+.biodata-image img:hover {
+    transform: scale(1.1); /* Membesar sedikit saat hover */
+}
+
+@media (max-width: 768px) {
+    .biodata-container {
+        flex-direction: column; /* Tumpuk elemen secara vertikal */
+        text-align: center;
+    }
+
+    .biodata-text {
+        max-width: 100%; /* Teks memenuhi lebar layar */
+        margin-bottom: 20px; /* Jarak antara teks dan gambar */
+    }
+
+    .biodata-image img {
+        max-width: 200px; /* Perkecil ukuran gambar untuk layar kecil */
+    }
+}
+
+.introduction {
+    background: linear-gradient(135deg, #2D336B, #7886C7); /* Latar belakang gradasi */
+    padding: 50px 20px;
+    border-radius: 15px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto; /* Pusatkan elemen */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+/* Kontainer teks */
+.intro-container {
+    text-align: center;
+}
+
+/* Judul utama */
+.intro-container h1 {
+    font-size: 36px; /* Perbesar ukuran judul */
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Teks kapital */
+    letter-spacing: 2px; /* Jarak antar huruf */
+}
+
+/* Warna khusus untuk nama */
+.intro-container .highlight {
+    color: #FFE082; /* Warna mencolok untuk menonjolkan kata-kata penting */
+}
+
+/* Paragraf teks */
+.intro-container p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify; /* Rata kanan-kiri */
+    margin-top: 15px;
+}
+
+/* Gaya untuk teks tebal */
+.intro-container p strong {
+    color: #FFD54F;
+}
+
+/* Efek dekoratif untuk highlight */
+.intro-container .highlight {
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.2); /* Sorotan halus */
+    padding: 0 5px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Kontainer untuk gambar dan teks */
+.intro-image-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #2D336B, #7886C7); /* Gradasi latar belakang */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Bayangan lembut */
+    color: white;
+    max-width: 1000px;
+    margin: 0 auto; /* Pusatkan kontainer */
+}
+
+/* Teks perkenalan */
+.intro-text {
+    max-width: 50%; /* Teks mengambil setengah kontainer */
+}
+
+.intro-text h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Huruf kapital */
+    letter-spacing: 1.5px; /* Jarak antar huruf */
+}
+
+.intro-text p {
+    font-size: 18px;
+    line-height: 1.8; /* Jarak antar baris */
+    margin-top: 15px;
+    text-align: justify; /* Rata kanan-kiri */
+}
+
+/* Penekanan teks menggunakan highlight */
+.intro-text .highlight {
+    font-weight: bold;
+    color: #FFE082; /* Warna kuning untuk kontras */
+    background: rgba(255, 255, 255, 0.2); /* Highlight semi-transparan */
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+/* Gaya untuk gambar */
+.intro-image img {
+    max-width: 300px; /* Sesuaikan ukuran gambar */
+    border-radius: 50%; /* Membuat gambar melingkar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan lembut */
+    transition: transform 0.3s ease-in-out; /* Animasi hover */
+}
+
+/* Animasi hover untuk gambar */
+.intro-image img:hover {
+    transform: scale(1.1); /* Gambar sedikit membesar saat hover */
+}
+
+@media (max-width: 768px) {
+    .intro-image-text {
+        flex-direction: column; /* Tumpuk elemen secara vertikal */
+        text-align: center;
+    }
+
+    .intro-text {
+        max-width: 100%;
+        margin-bottom: 20px; /* Tambahkan jarak antara teks dan gambar */
+    }
+
+    .intro-image img {
+        max-width: 200px; /* Ukuran gambar lebih kecil di layar kecil */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navbar */
+    .navbar ul {
+        flex-direction: column; /* Tampilkan menu secara vertikal */
+        align-items: flex-start; /* Rata kiri */
+        padding-left: 10px;
+        display: none;
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px; /* Tambahkan jarak antar menu */
+    }
+
+    /* Header */
+    header .hero {
+        flex-direction: column; /* Tumpuk gambar dan teks secara vertikal */
+        text-align: center;
+    }
+
+    header .hero img {
+        margin-bottom: 20px; /* Jarak antara gambar dan teks */
+    }
+
+    header .hero .intro-text h1 {
+        font-size: 24px; /* Perkecil ukuran teks */
+    }
+
+    header .hero .intro-text p {
+        font-size: 16px;
+    }
+
+    /* Biodata */
+    .biodata-container {
+        flex-direction: column; /* Tumpuk elemen secara vertikal */
+        text-align: center;
+    }
+
+    .biodata-text {
+        max-width: 100%; /* Teks memenuhi lebar layar */
+        margin-bottom: 20px;
+    }
+
+    .biodata-image img {
+        max-width: 80%; /* Sesuaikan ukuran gambar */
+        margin: 0 auto;
+    }
+
+    /* Keahlian */
+    .skills {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Sesuaikan grid */
+        gap: 10px;
+    }
+
+    .skill-box {
+        font-size: 14px; /* Perkecil ukuran teks dalam kotak */
+        padding: 10px;
+    }
+
+    /* Proyek */
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Kurangi ukuran grid */
+    }
+
+    /* Form Contact */
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form input, .contact-form textarea, .contact-form button {
+        width: 100%; /* Pastikan semua elemen penuh */
+    }
+
+    /* Footer */
+    .footer-container {
+        flex-direction: column; /* Tata elemen secara vertikal */
+        text-align: center;
+    }
+
+    .contact-info {
+        margin-top: 20px;
+    }
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.navbar-links li a:hover {
+    color: #FFE082; /* Warna hover */
+}
+
+/* Tombol menu */
+.menu-toggle {
+    display: none; /* Sembunyikan di desktop */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Responsif: Tampilan mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Tampilkan tombol di layar kecil */
+    }
+
+    .navbar-links {
+        display: none; /* Sembunyikan menu secara default */
+        flex-direction: column;
+        background-color: #2D336B;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar-links.active {
+        display: flex; /* Tampilkan menu saat aktif */
+    }
+
+    .navbar-links li {
+        margin: 10px 0; /* Jarak antar item menu */
+        text-align: center;
+    }
+}
