@@ -67,6 +67,18 @@ header .intro-text {
     color: #2D336B;
 }
 
+header .hero .intro-text h1 {
+    font-size: 36px; /* Perbesar ukuran judul */
+    font-weight: bold; /* Pastikan teks terlihat tegas */
+    margin-bottom: 15px; /* Tambahkan jarak dengan teks di bawahnya */
+}
+
+header .hero .intro-text p {
+    font-size: 18px; /* Perbesar ukuran teks deskripsi */
+    font-weight: 400; /* Sedikit lebih ringan untuk tampilan seimbang */
+    line-height: 1.6; /* Jarak antar baris lebih lebar untuk kenyamanan membaca */
+}
+
 main section {
     padding: 20px;
 }
@@ -104,7 +116,6 @@ main #keahlian .skills, main #projects .project-grid {
     transform: scale(1.1);
 }
 
-/* Gaya untuk form di Contact */
 .contact-form {
     max-width: 500px;
     margin: 0 auto;
